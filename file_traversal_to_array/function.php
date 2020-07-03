@@ -28,7 +28,7 @@ continue;
 }else{
 //获取相对$root的文件路径
 $map_branch=substr($a,$root_length);
-$map_branch_arr=explode("/",$map_branch);
+$map_branch_arr=explode("/",strtoupper($map_branch));
 $map_branch_arr_size=sizeof($map_branch_arr);
 //从最深的路径开始赋值
 $map_branch_arr[$map_branch_arr_size-1]=substr($map_branch_arr[$map_branch_arr_size-1],0,-4);
